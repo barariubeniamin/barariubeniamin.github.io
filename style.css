@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0%;
+  min-height: 100%;
+  background: #817e9b;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#side-menu {
+  flex: 1;
+}
+
+#main {
+  flex: 3;
+}
+
+#header-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: brown;
+}
+
+li {
+  color: orchid;
+  font-style: italic;
+}
+
+#motto {
+  text-align: right;
+  margin: 0;
+}
+
+#motto span {
+  font-weight: bold;
+}
+
+.favorite {
+  font-size: medium;
+  color: cornflowerblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#top-menu-bar {
+  text-align: center;
+  background-color: #334435;
+  color: #fff;
+}
+
+#top-menu-bar li {
+  display: inline;
+  margin: 0%;
+  padding: 0%;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #fff;
+}
+
+#top-menu-bar a:visited {
+  color: #fff;
+}
+
+#top-menu-bar a:hover {
+  color: #334435;
+  background: rgb(98, 71, 71);
+}
+
+.page{ 
+  color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+  box-shadow: 0 4px 8px rgb(151 127 200 / 9% );
+  padding: 1.6rem;
+}
+
+.page h2{
+  margin-top: 0;
+}
