@@ -1,6 +1,6 @@
 console.info(2);
 console.debug(33 + 2);
-console.warn(15 * 3 - 10)
+console.warn(23* 3 - 10)
 console.error("started");
 
 var myName = "Beniamin";
