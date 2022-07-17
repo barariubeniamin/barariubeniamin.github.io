@@ -38,10 +38,10 @@ header ,footer, #content {
     <p id="motto"><span>Student developer@gmail.com</span></p>
 
     <ul id="top-menu-bar">
-      <li> <a href="#">Home</a></li>
-      <li> <a href="#">Skills</a></li>
-      <li> <a href="#">Projects</a></li>
-      <li> <a href="#">Languages</a></li>
+      <li> <a href="#" onclick="showHomePage()">Home</a></li>
+      <li> <a href="#" onclick="showSkillsPage()">Skills</a></li>
+      <li> <a href="#" onclick="showProjectsPage()">Projects</a></li>
+      <li> <a href="#" onclick="showLanguagesPage()">Languages</a></li>
 
     </ul>
   </header>
@@ -49,18 +49,23 @@ header ,footer, #content {
   <section id="content">
     <div id="side-menu">
       <section>
+        <h2>Follow me</h2>
+
+      </section>
+      <br>
+      <section>
+
         <div id="contact">
-          <h3><marquee>Contact</marquee></h3>
+          <div class="adress">
+            <h3>Contacts</h3>
+          </div>
           <ul>
             <li>Phone Nr: +407488257</li>
             <br>
             <li>Oradea, Str. Piata Nucetului nr.9</li>
           </ul>
         </div>
-      </section>
-      <br>
-      <section>
-        <div id="email">          
+        <div id="email">
           <form action="" method="get">
             <input type="email" name="email" id="user eamil">
             <button type="submit">Email</button>
@@ -70,20 +75,22 @@ header ,footer, #content {
       </section>
     </div>
 
-    <div id="main">      
-      <div class="page">
-        <div class="page">
-          <h3 id="Home">Home</h3>
-          <p>About me...</p>
-        </div>
-        
+    <div id="main">
+      <div id="home" class="page">
+        <h3>Home</h3>
+        <p>About me...</p>
+      </div>
+
+      <div id="skills" class="page">
         <h3>Skills</h3>
         <ul id="left-menu-bar">
           <li class="favorite">HTML</li>
           <li class="favorite">CSS</li>
           <li class="favorite">Js</li>
         </ul>
+      </div>
 
+      <div id="projects" class="page">
         <h3>Projects</h3>
         <ul id="left-menu-bar1">
           <li>CV</li>
@@ -91,10 +98,8 @@ header ,footer, #content {
         </ul>
       </div>
 
-      <div class="page">
-
+      <div id="languages" class="page">
         <h3>Known language</h3>
-
         <table border="1">
           <tr>
             <td>Romanian</td>
@@ -107,8 +112,6 @@ header ,footer, #content {
         </table>
 
       </div>
-      <br>
-      <br>
   </section>
 
   <footer>

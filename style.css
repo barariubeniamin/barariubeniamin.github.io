@@ -1,14 +1,14 @@
-html{
+html {
   height: 100%;
 
 }
 
-body{
+body {
   margin: 1%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color:#c9c7d9
+  background-color: #c9c7d9
 }
 
 #content {
@@ -21,103 +21,114 @@ body{
   flex: 1;
 }
 
-#main{
+#main {
   flex: 3;
 }
 
-#left-menu-bar{
+#left-menu-bar {
   color: rgb(0, 0, 0);
-  font-style:oblique;
-  list-style: 
+  font-style: oblique;
+  list-style:
 }
 
-#contact{
+#contact {
   list-style: square;
-  
+
 }
 
-#motto{
+#motto {
   text-align: end;
   margin-bottom: 5%;
   margin-right: 2%;
 
-  color:#413c3c
+  color: #413c3c
 }
 
-#motto span{
+#motto span {
   font-weight: bold;
 }
 
-.favorite{
+.favorite {
   font-size: medium;
   color: rgb(72, 46, 61);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#top-menu-bar{
+#top-menu-bar {
   text-align: center;
   background-color: #22284f;
   color: #fff;
 }
 
-#top-menu-bar li{
+#top-menu-bar li {
   display: inline;
   margin: 0%;
   padding: 1%;
 }
 
-#top-menu-bar a{
+#top-menu-bar a {
   text-decoration: none;
   padding: 0 15px;
   color: #fff;
 
 }
 
-#top-menu-bar a:visited{
+#top-menu-bar a:visited {
   color: #fff;
 }
 
-#top-menu-bar a:hover{
+#top-menu-bar a:hover {
   color: #2c3138;
   background: #fff;
 }
 
-img{
+img {
   border-style: groove;
   border-radius: 50%;
 }
 
-#avatar{
+#avatar {
   text-align: center;
-  margin-top: 5%;
 }
 
-h2{
+h2 {
+  margin: 5px 0;
   text-align: center;
   color: #413c3c;
   font-family: cursive;
 }
 
-h3{
-  text-decoration:dashed;
+h3 {
+  text-decoration: dashed;
   color: #2c2828;
   font-size: x-large;
   font-family: 'Times New Roman', Times, serif;
   margin-left: 2%;
-  text-emphasis:initial;
+  text-emphasis: initial;
 }
 
-#email{
-  margin-top: 100%;
-  text-align: center;
+#email {
+  margin-top: 20px;
 }
+
 #contact {
-  text-align: center;
+  text-align: left;
 }
-footer a{
-  color:rgb(176, 146, 146)
+
+.adress {
+  text-align: left;
+  margin-left: 30px;
 }
-footer{
-  background-color:#22284f;
-  color:#fff
+
+footer a {
+  color: rgb(176, 146, 146)
+}
+
+footer {
+  background-color: #1c2037;
+  color: #fff
+}
+
+.page {
+  display: none;
 }
