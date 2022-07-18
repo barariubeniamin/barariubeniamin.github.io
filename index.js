@@ -48,8 +48,9 @@ function showSkillsPage() {
 
 function showProjectsPage() {
   hidePage("home");
+  s;
   hidePage("skills");
-  hidePage("projects");
+  hidePage("languages");
   showPage("projects");
 }
 
