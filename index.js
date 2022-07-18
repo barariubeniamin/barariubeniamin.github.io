@@ -22,41 +22,26 @@ mottoElement.innerHTML = jobtitle;
 
 // Show home page
 
-function show(id) {
+function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
 
-function showPage(id) {
+function show(id) {
   console.warn("show", id);
   document.getElementById(id).style.display = "block";
 }
 
-function hide() {
-  show("home");
-  show("skills");
-  show("projects");
-  show("languages");
+function hideAllPage() {
+  hide("home");
+  hide("skills");
+  hide("projects");
+  hide("languages");
 }
 
-function showHomePage() {
-  hide();
-  showPage("home");
+function showPage(id) {
+  hideAllPage();
+  show(id);
 }
 
-function showSkillsPage() {
-  hide();
-  showPage("skills");
-}
-
-function showProjectsPage() {
-  hide();
-  showPage("projects");
-}
-
-function showLanguagesPage() {
-  hide();
-  showPage("languages");
-}
-
-showHomePage();
+showPage("home");
