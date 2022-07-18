@@ -22,7 +22,7 @@ mottoElement.innerHTML = jobtitle;
 
 // Show home page
 
-function hidePage(id) {
+function show(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
@@ -32,30 +32,30 @@ function showPage(id) {
   document.getElementById(id).style.display = "block";
 }
 
-function hideAllPages() {
-  hidePage("home");
-  hidePage("skills");
-  hidePage("projects");
-  hidePage("languages");
+function hide() {
+  show("home");
+  show("skills");
+  show("projects");
+  show("languages");
 }
 
 function showHomePage() {
-  hideAllPages();
+  hide();
   showPage("home");
 }
 
 function showSkillsPage() {
-  hideAllPages();
+  hide();
   showPage("skills");
 }
 
 function showProjectsPage() {
-  hideAllPages();
+  hide();
   showPage("projects");
 }
 
 function showLanguagesPage() {
-  hideAllPages();
+  hide();
   showPage("languages");
 }
 
