@@ -39,5 +39,35 @@ function showLanguagesPage() {
   document.getElementById("projects").style.display = "none";
   document.getElementById("languages").style.display = "block";
 }
+// home work
+
+function showHomePage() {
+  document.getElementById("languages").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("home").style.display = "block";
+  document.getElementById("projects").style.display = "none";
+}
+
+function showSkillsPage() {
+  document.getElementById("languages").style.display = "none";
+  document.getElementById("skills").style.display = "block";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+
+}
+
+function showProjectsPage() {
+  document.getElementById("skills").style.display = "none"
+  document.getElementById("projects").style.display = "block"
+  document.getElementById("home").style.display = "none"
+  document.getElementById("languages").style.display = "none"
+}
+
+function showLanguagesPage() {
+  document.getElementById("projects").style.display = "none"
+  document.getElementById("languages").style.display = "block"
+  document.getElementById("home").style.display = "none"
+  document.getElementById("skills").style.display = "none"
+}
 
 showHomePage();
