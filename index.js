@@ -20,8 +20,6 @@ console.warn(mottoElement.innerHTML);
 // mottoElement.innerHTML = mottoElement.innerHTML + "&" jobtitle
 mottoElement.innerHTML = jobtitle;
 
-// Show home page
-
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";

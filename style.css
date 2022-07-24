@@ -1,6 +1,5 @@
 html {
   height: 100%;
-
 }
 
 body {
@@ -8,7 +7,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #c9c7d9
+  background-color: #8ec3d1;
 }
 
 #content {
@@ -18,30 +17,37 @@ body {
 }
 
 #side-menu {
-  flex: 1;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border-style: initial;
+  box-shadow: #22284f;
 }
 
 #main {
   flex: 3;
+  padding-left: 3em;
+  margin-top: 10px;
 }
 
-#left-menu-bar {
+#left-menu-bar,
+#left-menu-bar1 {
+  display: grid;
   color: rgb(0, 0, 0);
   font-style: oblique;
-  list-style:
+  grid-row-gap: 1em;
 }
 
 #contact {
   list-style: square;
-
 }
 
 #motto {
   text-align: end;
   margin-bottom: 5%;
   margin-right: 2%;
-
-  color: #413c3c
+  color: #413c3c;
 }
 
 #motto span {
@@ -51,7 +57,8 @@ body {
 .favorite {
   font-size: medium;
   color: rgb(72, 46, 61);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #top-menu-bar {
@@ -62,23 +69,23 @@ body {
 
 #top-menu-bar li {
   display: inline;
-  margin: 0%;
+  margin: 2%;
   padding: 1%;
 }
 
 #top-menu-bar a {
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0px 15px;
   color: #fff;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #top-menu-bar a:visited {
-  color: #fff;
+  color: rgb(175, 124, 124);
 }
 
 #top-menu-bar a:hover {
-  color: #2c3138;
+  color: #804862;
   background: #fff;
 }
 
@@ -102,8 +109,8 @@ h3 {
   text-decoration: dashed;
   color: #2c2828;
   font-size: x-large;
-  font-family: 'Times New Roman', Times, serif;
-  margin-left: 2%;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 35px;
   text-emphasis: initial;
 }
 
@@ -112,23 +119,38 @@ h3 {
 }
 
 #contact {
-  text-align: left;
+  text-align: center;
 }
 
 .adress {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 footer a {
-  color: rgb(196, 194, 194)
+  color: rgb(175, 124, 124);
 }
 
 footer {
   background-color: #1c2037;
-  color: rgb(196, 194, 194)
+  color: rgb(175, 124, 124);
 }
 
 .page {
   display: none;
+}
+
+#languages table {
+  width: 50%;
+  border-collapse: separate;
+  text-align: center;
+}
+#languages table th,
+#languages table td {
+  border: 1px solid #303060;
+  padding: 5px;
+}
+
+.about-me {
+  margin-left: 15px;
 }
