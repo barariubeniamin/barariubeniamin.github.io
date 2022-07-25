@@ -80,6 +80,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#top-menu-bar a.active {
+  background-color: #b5dfeb;
+}
+
 #top-menu-bar a:visited {
   color: rgb(175, 124, 124);
 }
