@@ -81,7 +81,8 @@ body {
 }
 
 #top-menu-bar a.active {
-  background-color: #b5dfeb;
+  background-color: #aedbb9;
+  color: rgb(198, 44, 44);
 }
 
 #top-menu-bar a:visited {
