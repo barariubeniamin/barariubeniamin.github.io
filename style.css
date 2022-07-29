@@ -17,12 +17,10 @@ body {
 }
 
 #side-menu {
-  margin-bottom: 10px;
-  padding: 10px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-  border-style: initial;
-  box-shadow: #22284f;
+  border-right: #000 solid 1px;
+  padding-right: 30px;
+
+  margin: 20px;
 }
 
 #main {
@@ -63,35 +61,38 @@ body {
 
 #top-menu-bar {
   text-align: center;
-  background-color: #22284f;
+  background: none;
   color: #fff;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding: 20px 0;
 }
 
 #top-menu-bar li {
   display: inline;
-  margin: 2%;
-  padding: 1%;
+  border-right: 2px solid #000;
+  text-align: center;
 }
 
 #top-menu-bar a {
   text-decoration: none;
-  padding: 0px 15px;
+  padding: 15px 40px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #top-menu-bar a.active {
-  background-color: #aedbb9;
+  background-color: none;
   color: rgb(198, 44, 44);
 }
 
 #top-menu-bar a:visited {
-  color: rgb(175, 124, 124);
+  color: rgb(25, 1, 1);
 }
 
 #top-menu-bar a:hover {
-  color: #804862;
-  background: #fff;
+  color: #d5621b;
+  background: #b5dfeb;
 }
 
 img {
@@ -133,12 +134,13 @@ h3 {
 }
 
 footer a {
-  color: rgb(175, 124, 124);
+  color: rgb(0, 0, 0);
 }
 
 footer {
-  background-color: #1c2037;
-  color: rgb(175, 124, 124);
+  background-color: none;
+  color: rgb(0, 0, 0);
+  border-top: #000 solid 2px;
 }
 
 .page {
