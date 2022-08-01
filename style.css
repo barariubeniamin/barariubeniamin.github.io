@@ -19,7 +19,6 @@ body {
 #side-menu {
   border-right: #000 solid 1px;
   padding-right: 30px;
-
   margin: 20px;
 }
 
@@ -33,7 +32,7 @@ body {
 #left-menu-bar1 {
   display: grid;
   color: rgb(0, 0, 0);
-  font-style: oblique;
+  font-style: normal;
   grid-row-gap: 1em;
 }
 
@@ -55,8 +54,7 @@ body {
 .favorite {
   font-size: medium;
   color: rgb(72, 46, 61);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: normal;
 }
 
 #top-menu-bar {
@@ -70,8 +68,12 @@ body {
 
 #top-menu-bar li {
   display: inline;
-  border-right: 2px solid #000;
+  border-right: 1px solid #000;
   text-align: center;
+}
+
+#top-menu-bar li:last-child {
+  border-right: none;
 }
 
 #top-menu-bar a {
@@ -116,12 +118,17 @@ h3 {
   color: #2c2828;
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
-  margin-left: 35px;
   text-emphasis: initial;
+  padding-bottom: 5%;
+  height: 15px;
+  text-shadow: #413c3c;
 }
-
 #email {
-  margin-top: 20px;
+  position: fixed;
+  bottom: 70px;
+  left: 35px;
+  width: 300px;
+  margin-left: 20px;
 }
 
 #contact {
@@ -129,7 +136,7 @@ h3 {
 }
 
 .adress {
-  text-align: left;
+  text-align: center;
   margin-left: 25px;
 }
 
@@ -160,4 +167,10 @@ footer {
 
 .about-me {
   margin-left: 15px;
+}
+
+#hobbies li {
+  padding: 7px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: normal;
 }
