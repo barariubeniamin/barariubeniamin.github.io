@@ -123,13 +123,6 @@ h3 {
   height: 15px;
   text-shadow: #413c3c;
 }
-#email {
-  position: fixed;
-  bottom: 70px;
-  left: 35px;
-  width: 300px;
-  margin-left: 20px;
-}
 
 #contact {
   text-align: center;

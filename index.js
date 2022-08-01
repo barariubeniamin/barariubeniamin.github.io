@@ -60,19 +60,36 @@ showPage(activePage);
 initEvents();
 
 function displaySkills() {
-  console.info("display skills");
-
-  // initializare; conditie; post exec
-  for (var i = 1; i < 11; i++) {
-    console.info(`${i} * 5 = ${1 * 5}`);
-    // i = i + 1;
-  }
   var ul = document.querySelector("#skills ul");
-  var skills = ["html", "css", "js"];
-  console.info(ul);
-  for (var i = 1; i < 3; i++) {
-    ul.innerHTML += `<li>$(skills[i])<li>`;
+  var skills = [
+    { name: "js", endorcements: 8, favorite: true },
+    { name: "css", endorcements: 9, favorite: false },
+    { name: "html", endorcements: 4, favorite: true },
+  ];
+  skills.sort(function (a, b) {
+    return b.endorcements - a.endorcements;
+    // if (a.name.toLowerCase() < b.name.toLowerCase()) {
+    //   return -1;
+    // }
+    // if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    //   return 1;
+    // }
+    // return 0;
+  });
+  console.info(skills);
+  for (var i = 0; i < skills.length; i++) {
+    ul.innerHTML += `<li>${skills[i].name} - ${skills[i].endorcements}</li>`;
   }
 }
 
-displaySkills();
+function loadSkills() {
+  fetch("skills.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (serverSkills) {
+      displaySkills(serverSkills);
+    });
+}
+
+loadSkills();
