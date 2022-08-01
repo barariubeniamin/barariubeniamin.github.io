@@ -58,3 +58,21 @@ function initEvents() {
 
 showPage(activePage);
 initEvents();
+
+function displaySkills() {
+  console.info("display skills");
+
+  // initializare; conditie; post exec
+  for (var i = 1; i < 11; i++) {
+    console.info(`${i} * 5 = ${1 * 5}`);
+    // i = i + 1;
+  }
+  var ul = document.querySelector("#skills ul");
+  var skills = ["html", "css", "js"];
+  console.info(ul);
+  for (var i = 1; i < 3; i++) {
+    ul.innerHTML += `<li>$(skills[i])<li>`;
+  }
+}
+
+displaySkills();
